@@ -1,0 +1,10 @@
+.maintest{
+
+   
+   height: 600px;
+  
+}
+.vh-100{
+   background-image: url('../../assets/img/an.jpg');
+   background-size:cover;
+}

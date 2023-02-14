@@ -1,0 +1,13 @@
+
+.banner{
+
+    background-image: url('../../assets/img/23.jpg');
+    height: 800px;
+    background-size:contain;
+
+}
+.content{
+    top: 30%;
+    left:20%;
+    position: absolute;
+}

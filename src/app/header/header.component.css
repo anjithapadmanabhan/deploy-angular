@@ -1,0 +1,23 @@
+.ulaclass{
+    display: flex;
+    list-style: none; 
+    grid-gap: 2rem;
+    
+ 
+}
+.container-fluid{
+ 
+    justify-content: space-between;
+    flex-direction: row-reverse;
+ background-color: hsl(147, 89%, 33%);
+    /* background-image:" https://www.google.com/imgres?imgurl=https%3A%2F%2Fw1.pngwing.com%2Fpngs%2F188%2F805%2Fpng-transparent-food-icon-tea-cooking-drink-kitchen-fast-food-logo-restaurant.png&imgrefurl=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dfood%2BLogo&tbnid=8AnDLD5-lSqZcM&vet=10CH8QMyieAWoXChMI0ISjy462-gIVAAAAAB0AAAAAEAM..i&docid=P3gtP69HPF2AXM&w=920&h=920&q=logos%20for%20food%20website&ved=0CH8QMyieAWoXChMI0ISjy462-gIVAAAAAB0AAAAAEAM"; */
+
+}
+button{
+    background-color: green;
+}
+   
+
+
+
+

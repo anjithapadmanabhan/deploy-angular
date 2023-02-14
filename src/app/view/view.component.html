@@ -1,0 +1,40 @@
+ <div class="main">
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let item of data">
+            <div class="foodBox mt-3 mb-3">
+              
+               
+
+                
+                    <img src= "{{rs1}}{{item.image}}" alt="banner" />
+                         <p>{{item.name}}</p>
+                    <p>{{item.description}}</p>
+                    <p>₹{{item.price}}</p>
+                    <!-- <p class="pas">a={{item.id}}</p> -->
+                </div><p class="pas">a={{item.id}}</p>
+
+
+                <!-- a={{item.id}} -->
+                <div *ngVar="a as variable">
+                
+                </div>
+                       <form #userpost="ngForm" (ngSubmit)="onsubmit(userpost.value)">
+                        <button  type="submit" onclick="changec()" id="sbtn" placeholder="userid" value="1" style="background-color: green;color:white; border-color: green;border-radius :5px;">Add to Cart</button><br> 
+                           <input type="hidden" placeholder="userid" name="demo" value="{{demo}}" ngModel="{{demo}}"><br>
+                           <input type="hidden" placeholder="pid" value="a" name="a" ngModel="{{item.id}}"><br>
+                           
+                
+                           <!-- <button type="button" [disabled]="clicked" (click)="actionMethod(); clicked = true;" class="btn btn-primary">Give Kitchen access</button> -->
+                           
+                          
+                          
+                          </form>
+                          </div>
+                      </div>
+                
+                      
+                  </div>
+                </div> 
+                <!-- -->
+

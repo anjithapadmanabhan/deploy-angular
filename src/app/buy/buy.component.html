@@ -1,0 +1,84 @@
+
+   <form #userpost="ngForm" (ngSubmit)="cartse(userpost.value)"> 
+    <input type="hidden" placeholder="userid" name="demo" value="{{demo}}" ngModel="{{demo}}"><br>
+           <input type="submit" placeholder="userid" value="View Cart" style="background-color: rgb(226, 240, 226);color:rgb(12, 7, 7); border-color: rgb(227, 239, 227)"><br>
+    </form>
+    
+           <ng-container>
+        <div class="container">
+        <div class="card-table">
+            <div class="card-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr> 
+                            <th>Sl.No</th>
+                            <th >Product Name</th>
+                            <th >Product Image</th>
+                           
+                           
+                             <th>Quantity</th>
+                             <th>Price</th>
+                            <th>Total</th>
+                           <th colspan="5">Actions</th>
+                          
+                       
+    
+                        </tr>
+                    </thead>
+                   <tbody>
+                     <tbody *ngFor="let items of val let i=index;">
+                     <td>{{i+1}}</td>
+    
+           
+                 
+                   
+                     <td style="width: 18%;">{{items.name}}</td>
+       
+                     <td><img style="width: 95%; height: 120px; align-items: left;"src="{{rss}}{{items.image}}"alt="foo"></td>
+                     
+                     <td style="width: 10%;"><button  style="background-color: rgba(169, 169, 169, 0.864);"(click)="increase(items)">+</button>&nbsp;
+                      {{items.quantity}}
+                   <button style="background-color: rgba(169, 169, 169, 0.864);"(click)="decrease(items)">-</button></td>
+                     <td style="width: 16%;">{{items.price}}</td>
+                     
+                  
+    
+                <td style="width: 9%;">{{items.price*items.quantity}}</td>
+              <p class="para"> a={{items.id}}</p>
+              <div *ngVar="a" as variable>
+        </div>
+                     <td>  <form #userpost="ngForm" (ngSubmit)="onsubmit(userpost.value)">
+                           <button type="submit"  id="sbtn" class="btn btn-danger" placeholder="userid" value="1"><li class="fas fa-trash"></li></button><br> 
+                           <input type="hidden" placeholder="userid" name="demo" value="{{demo}}" ngModel="{{demo}}"><br>
+                           <input type="hidden" placeholder="cart_id" value="a" name=a ngModel=" {{items.id}}"><br>
+                         
+                
+                           <!-- <button type="button" [disabled]="clicked" (click)="actionMethod(); clicked = true;" class="btn btn-primary">Give Kitchen access</button> -->
+                         
+                          
+                        
+                          </form>
+                         
+                     <tr>
+                    
+                </tr></tbody>
+            </table></div></div></div></ng-container>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                   
+    

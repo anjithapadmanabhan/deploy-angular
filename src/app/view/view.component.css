@@ -1,0 +1,38 @@
+/* .main{
+    background-image: url('../../assets/img/view3.jpg');
+    height: 200%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    /* width: 100%; */
+  
+
+.foodBox{
+    padding: 10px 10px;
+    
+}
+.foodBox img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.foodBox h1{
+    font-size: 15px;
+margin-top: 20px;
+font-weight: bold;
+
+}
+.buybtn{
+    color: rgb(238, 229, 229);
+    background-color:rgb(41 118 26);
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+} 
+.pas{
+    visibility: hidden;
+}
